@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-white font-sans text-navy; }
+  :focus-visible { @apply outline-none ring-2 ring-neon ring-offset-2 ring-offset-white; }
+  ::selection { background: #B8F3FF; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
